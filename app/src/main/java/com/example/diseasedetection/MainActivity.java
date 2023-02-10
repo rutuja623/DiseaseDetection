@@ -1,7 +1,5 @@
 package com.example.diseasedetection;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -29,9 +27,12 @@ import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 
+
+
+
 public class MainActivity extends AppCompatActivity {
 
-    Button camera, gallery;
+    Button camera, gallery, btn;
     ImageView imageView;
     TextView result;
     int imageSize = 32;
@@ -43,9 +44,13 @@ public class MainActivity extends AppCompatActivity {
 
         camera = findViewById(R.id.button);
         gallery = findViewById(R.id.button2);
+        btn = findViewById(R.id.button3);
+
+
 
         result = findViewById(R.id.result);
         imageView = findViewById(R.id.imageView);
+
 
         camera.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,6 +68,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent cameraIntent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
                 startActivityForResult(cameraIntent, 1);
+            }
+        });
+
+        btn.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Intent i =  new Intent(MainActivity.this, MainActivity2.class);
+                startActivity(i);
             }
         });
     }
@@ -105,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
                     maxPos = i;
                 }
             }
-            String[] classes = {"Early blight", "healthy"};
+            String[] classes = {"Early Blight", "healthy"};
             result.setText(classes[maxPos]);
 
             // Releases model resources if no longer used.

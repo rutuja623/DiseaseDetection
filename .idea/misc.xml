@@ -3,7 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/rutuj/DiseaseDetection2/app/src/main/res/layout/activity_main.xml" value="0.1859375" />
+        <entry key="..\:/Users/rutuj/DiseaseDetection2/app/src/main/res/drawable-v24/custom_button_next.xml" value="0.1" />
+        <entry key="..\:/Users/rutuj/DiseaseDetection2/app/src/main/res/drawable/ic_baseline_photo_24.xml" value="0.2203125" />
+        <entry key="..\:/Users/rutuj/DiseaseDetection2/app/src/main/res/drawable/ic_baseline_photo_camera_24.xml" value="0.2203125" />
+        <entry key="..\:/Users/rutuj/DiseaseDetection2/app/src/main/res/drawable/round.xml" value="0.2111111111111111" />
+        <entry key="..\:/Users/rutuj/DiseaseDetection2/app/src/main/res/drawable/round_button.xml" value="0.2203125" />
+        <entry key="..\:/Users/rutuj/DiseaseDetection2/app/src/main/res/font/more_sugar_regular.xml" value="0.234375" />
+        <entry key="..\:/Users/rutuj/DiseaseDetection2/app/src/main/res/font/moresugar.xml" value="0.25" />
+        <entry key="..\:/Users/rutuj/DiseaseDetection2/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/rutuj/DiseaseDetection2/app/src/main/res/layout/activity_main2.xml" value="0.1" />
+        <entry key="..\:/Users/rutuj/DiseaseDetection2/app/src/main/res/layout/fragment_causes.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/rutuj/DiseaseDetection2/app/src/main/res/layout/fragment_discription.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/rutuj/DiseaseDetection2/app/src/main/res/layout/fragment_prevention.xml" value="0.19010416666666666" />
       </map>
     </option>
   </component>
