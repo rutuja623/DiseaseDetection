@@ -1,8 +1,5 @@
 package com.example.diseasedetection;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -11,23 +8,23 @@ import android.media.ThumbnailUtils;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.diseasedetection.ml.Model;
 
+import org.checkerframework.checker.nullness.qual.Nullable;
 import org.tensorflow.lite.DataType;
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
-
-
 
 
 public class MainActivity extends AppCompatActivity {
@@ -45,8 +42,6 @@ public class MainActivity extends AppCompatActivity {
         camera = findViewById(R.id.button);
         gallery = findViewById(R.id.button2);
         btn = findViewById(R.id.button3);
-
-
 
         result = findViewById(R.id.result);
         imageView = findViewById(R.id.imageView);
@@ -155,5 +150,6 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         super.onActivityResult(requestCode, resultCode, data);
+        btn.setEnabled(true);
     }
 }
