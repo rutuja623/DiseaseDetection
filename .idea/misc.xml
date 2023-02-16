@@ -12,9 +12,10 @@
         <entry key="..\:/Users/rutuj/DiseaseDetection2/app/src/main/res/font/moresugar.xml" value="0.25" />
         <entry key="..\:/Users/rutuj/DiseaseDetection2/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/rutuj/DiseaseDetection2/app/src/main/res/layout/activity_main2.xml" value="0.1" />
+        <entry key="..\:/Users/rutuj/DiseaseDetection2/app/src/main/res/layout/disease_item.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/rutuj/DiseaseDetection2/app/src/main/res/layout/fragment_causes.xml" value="0.19010416666666666" />
         <entry key="..\:/Users/rutuj/DiseaseDetection2/app/src/main/res/layout/fragment_discription.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/rutuj/DiseaseDetection2/app/src/main/res/layout/fragment_prevention.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/rutuj/DiseaseDetection2/app/src/main/res/layout/fragment_prevention.xml" value="0.25" />
       </map>
     </option>
   </component>

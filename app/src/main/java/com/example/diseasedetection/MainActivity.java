@@ -34,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
     TextView result;
     int imageSize = 32;
 
+    String disease_name;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -71,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i =  new Intent(MainActivity.this, MainActivity2.class);
+                i.putExtra("dname", disease_name);
                 startActivity(i);
             }
         });
@@ -116,6 +119,7 @@ public class MainActivity extends AppCompatActivity {
             }
             String[] classes = {"Early Blight", "healthy"};
             result.setText(classes[maxPos]);
+            disease_name = classes[maxPos];
 
             // Releases model resources if no longer used.
             model.close();
