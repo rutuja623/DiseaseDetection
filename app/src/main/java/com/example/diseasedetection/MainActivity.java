@@ -31,9 +31,8 @@ public class MainActivity extends AppCompatActivity {
 
     Button camera, gallery, btn;
     ImageView imageView;
-    TextView result;
+    TextView result, classify;
     int imageSize = 32;
-
     String disease_name;
 
     @Override
@@ -44,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         camera = findViewById(R.id.button);
         gallery = findViewById(R.id.button2);
         btn = findViewById(R.id.button3);
+        classify =findViewById(R.id.classified);
 
         result = findViewById(R.id.result);
         imageView = findViewById(R.id.imageView);
@@ -69,12 +69,12 @@ public class MainActivity extends AppCompatActivity {
         });
 
         btn.setOnClickListener(new View.OnClickListener(){
-
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 Intent i =  new Intent(MainActivity.this, MainActivity2.class);
                 i.putExtra("dname", disease_name);
                 startActivity(i);
+                finish();
             }
         });
     }
@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
                     maxPos = i;
                 }
             }
-            String[] classes = {"Early Blight", "healthy"};
+            String[] classes = {"Early Blight", "Healthy"};
             result.setText(classes[maxPos]);
             disease_name = classes[maxPos];
 
@@ -154,6 +154,16 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         super.onActivityResult(requestCode, resultCode, data);
-        btn.setEnabled(true);
+        classify.setVisibility(View.VISIBLE);
+
+        if(disease_name == "Healthy"){
+            btn.setVisibility(View.INVISIBLE);
+        }else{
+            btn.setVisibility(View.VISIBLE);
+        }
+
     }
+
+
+
 }

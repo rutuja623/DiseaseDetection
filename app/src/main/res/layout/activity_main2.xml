@@ -14,7 +14,6 @@
         android:layout_width="match_parent"
         android:layout_marginTop="10dp"
         android:layout_height="270dp"
-        android:background="#FEF6E5"
         app:iss_period="1000"
         app:iss_auto_cycle="true"
         app:iss_delay="1000"
@@ -28,21 +27,20 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:layout_marginTop="290dp"
-        android:background="#FEF6E5"
     >
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tab"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FEF6E5"
+
             />
 
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/viewPager"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#FEF6E5"/>
+            />
 
 
     </LinearLayout>

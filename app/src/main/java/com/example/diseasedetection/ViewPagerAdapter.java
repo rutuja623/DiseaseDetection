@@ -24,10 +24,10 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
             return new Discription_and_Symptoms(disease_name);
 
         }else if(position==1){
-            return new Causes();
+            return new Causes(disease_name);
 
         }else{
-            return new Prevention_and_treatment();
+            return new Prevention_and_treatment(disease_name);
         }
     }
 

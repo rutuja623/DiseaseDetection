@@ -56,14 +56,11 @@ public class Discription_and_Symptoms extends Fragment {
                 titles.add("Disease Name");
                 titles.add("Plant Name");
                 titles.add("Description and Symptoms");
-                titles.add("Causes");
-                titles.add("Prevention and Treatment");
 
                 maininfo.add(inform.diseaseName);
                 maininfo.add(inform.plantName);
                 maininfo.add(inform.descriptionAndSymptoms);
-                maininfo.add(inform.causes);
-                maininfo.add(inform.preventionAndTreatment);
+
 
                 RecyclerView recyclerView = rootView.findViewById(R.id.recyclerview);
                 recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
