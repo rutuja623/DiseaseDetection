@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
                     maxPos = i;
                 }
             }
-            String[] classes = {"Early Blight", "healthy"};
+            String[] classes = {"Early Blight"};
             result.setText(classes[maxPos]);
             disease_name = classes[maxPos];
 
