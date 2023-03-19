@@ -63,7 +63,6 @@ public class Prevention_and_treatment extends Fragment {
                 recyclerView.setHasFixedSize(true);
                 adapter = new DiseaseInfoAdapter(getContext(), titles, maininfo);
 
-
                 recyclerView.setAdapter(adapter);
 
 
